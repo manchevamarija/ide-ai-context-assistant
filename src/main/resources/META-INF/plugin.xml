@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.marija.aicontext</id>
+    <name>AI Context Assistant</name>
+    <vendor email="marija@example.com">Marija Mancheva</vendor>
+
+    <description>
+        Small AI-related IntelliJ plugin that builds an IDE-aware prompt from the current file or selection
+        and can optionally send it to an OpenAI-compatible chat endpoint.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action
+            id="AIContextAssistant.ExplainSelection"
+            class="com.marija.aicontext.ExplainSelectionAction"
+            text="Explain Code with AI Context"
+            description="Build an AI prompt from the selected code or current file">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt A"/>
+        </action>
+    </actions>
+</idea-plugin>
