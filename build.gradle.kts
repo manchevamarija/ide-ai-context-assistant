@@ -7,10 +7,6 @@ plugins {
 group = "com.marija.aicontext"
 version = "0.1.0"
 
-repositories {
-    mavenCentral()
-}
-
 kotlin {
     jvmToolchain(17)
 }
