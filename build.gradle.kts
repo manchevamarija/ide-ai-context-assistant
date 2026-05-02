@@ -23,6 +23,7 @@ tasks {
     }
 
     runIde {
+        maxHeapSize = "2g"
         jvmArgs("-Didea.is.internal=true")
     }
 }
