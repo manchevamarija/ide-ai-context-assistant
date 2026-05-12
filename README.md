@@ -1,6 +1,6 @@
 # AI Context Assistant
 
-Small AI-related IntelliJ plugin for the JetBrains internship technical task.
+Small AI-related IntelliJ plugin.
 
 The plugin adds a **Tools -> Explain Code with AI Context** action. It reads the current editor selection, or the whole current file when nothing is selected, and builds an IDE-aware prompt with project name, file path, language, and code context.
 
